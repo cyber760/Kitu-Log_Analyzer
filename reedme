@@ -1,0 +1,75 @@
+## Network Analyzer
+
+A Python-based network monitoring and analysis dashboard designed for Kali Linux. Built to help users understand network interfaces, monitor connections, inspect network activity, and perform authorized network diagnostics.
+
+### Features
+- Interactive web dashboard
+- Network interface information
+- IP address and routing information
+- Network connection monitoring
+- Nmap integration
+- Wi-Fi interface information
+- Network diagnostics
+- Security reports
+- Kali Linux support
+
+### Technology Stack
+- Python
+- Flask
+- HTML5
+- CSS3
+- JavaScript
+- Nmap
+- Linux networking tools
+
+### Installation (Kali Linux)
+
+```bash
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip iproute2 nmap iw unzip git
+```
+
+### Setup
+
+```bash
+unzip kriti_network_analyzer.zip
+cd kriti_network_analyzer
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+python app.py
+```
+
+### Dashboard
+
+Open your browser:
+
+http://127.0.0.1:5000
+
+### Project Structure
+
+```text
+kriti_network_analyzer/
+├── app.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── .gitignore
+├── templates/
+│   └── index.html
+├── static/
+│   ├── app.js
+│   └── style.css
+├── logs/
+└── reports/
+```
+
+**Developer:** Jatin Kumar
+
+**GitHub:** https://github.com/cyber370
+
+**Purpose:** Educational network analysis and authorized cybersecurity monitoring.
